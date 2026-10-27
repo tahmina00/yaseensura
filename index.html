@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সূরা ইয়াসীন (সম্পূর্ণ ১-৮৩ আয়াত) - বাংলা উচ্চারণ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen transition-colors duration-200">
+
+    <div class="max-w-4xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        <!-- Main Card -->
+        <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200/80 dark:border-slate-700/80 overflow-hidden">
+            
+            <!-- Header Banner (Blue Theme) -->
+            <header class="bg-gradient-to-r from-blue-900 via-brand-800 to-indigo-900 text-white p-6 sm:p-10 text-center relative overflow-hidden">
+                <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-blue-500/20 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="absolute -left-12 -top-12 w-48 h-48 bg-indigo-400/20 rounded-full blur-2xl pointer-events-none"></div>
+                
+                <span class="inline-block px-3.5 py-1 bg-blue-950/60 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider text-blue-200 mb-3 border border-blue-400/30">
+                    মাক্কী সূরা • ৮৩ আয়াত
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-2 drop-shadow-sm">সূরা ইয়াসীন</h1>
+                <p class="text-blue-100 text-base sm:text-lg font-medium opacity-90">বাংলা উচ্চারণ ও উচ্চারণ সহায়িকা (আয়াত ১ - ৮৩)</p>
+            </header>
+
+            <!-- Control Bar (Search, Copy All, Text Size, Theme Toggle) -->
+            <div class="p-4 sm:p-6 bg-slate-100/70 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700 flex flex-col md:flex-row gap-4 justify-between items-center sticky top-0 backdrop-blur-md z-30">
+                
+                <!-- Search Input -->
+                <div class="relative w-full md:w-72">
+                    <!--input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="আয়াত বা শব্দ খুঁজুন..." 
+                        onkeyup="filterVerses()"
+                        class="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm shadow-sm transition"
+                    -->
+                    <svg class="w-5 h-5 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+
+                <!-- Action Controls -->
+                <div class="flex flex-wrap items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+                    
+                    <!-- Font Size Controls -->
+                    <div class="flex items-center bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-xl p-1 shadow-sm">
+                        <button onclick="changeFontSize(-1)" class="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-xs font-bold text-slate-600 dark:text-slate-300 transition" title="লেখা ছোট করুন">A-</button>
+                        <span class="px-2 text-xs font-semibold text-slate-500 dark:text-slate-400">ফন্ট</span>
+                        <button onclick="changeFontSize(1)" class="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-sm font-bold text-slate-600 dark:text-slate-300 transition" title="লেখা বড় করুন">A+</button>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button 
+                        onclick="toggleTheme()" 
+                        class="p-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-xl transition shadow-sm"
+                        title="ডার্ক / লাইট মোড"
+                    >
+                        <!-- Sun Icon -->
+                        <svg id="sunIcon" class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <!-- Moon Icon -->
+                        <svg id="moonIcon" class="w-5 h-5 block dark:hidden text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Copy All Button -->
+                    <button 
+                        onclick="copyAllText()" 
+                        class="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-sm font-semibold rounded-xl transition-colors flex items-center gap-2 shadow-sm active:scale-95"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path>
+                        </svg>
+                        <span>সব কপি করুন</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Toast Notification -->
+            <div id="toast" class="hidden fixed bottom-6 right-6 bg-slate-900 dark:bg-blue-600 text-white px-5 py-3 rounded-xl shadow-2xl text-sm font-medium transition-all duration-300 z-50 flex items-center gap-2">
+                <svg class="w-5 h-5 text-blue-400 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span id="toastMsg">কপি করা হয়েছে!</span>
+            </div>
+
+            <!-- Verses Container -->
+            <div class="p-4 sm:p-8">
+                <div id="verseContainer" class="space-y-3">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-slate-100 dark:bg-slate-900/60 text-center py-6 px-4 text-xs sm:text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700/80">
+                <p class="font-medium">সূরা ইয়াসীন — বাংলা উচ্চারণ ও সহজ পাঠ সংস্করণ</p>
+                <p class="mt-1 text-xs text-slate-400 dark:text-slate-500">সকল ৮৩টি আয়াত সমৃদ্ধ পূর্ণাঙ্গ তালিকা</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Array of 83 verses
+        const verses = [
+            "ইয়াসীন।",
+            "ওয়াল কোরআনিল হাকীম।",
+            "ইন্নাকা লামিনাল মুরসালীন।",
+            "আলা সিরাতিম মুস্তাকীম।",
+            "তানযীলাল আযীযির রাহীম।",
+            "লি তুনযিরা কাওমাম মা উনযিরা আবায়ুহুম ফাহুম গাফিলূন।",
+            "লাকাদ হাক্কাল কওলু আলা আকসারীহিম ফাহুম লা ইউমিনূন।",
+            "ইন্না জাআলনা ফি আনাক্বিহিম অগলালা ফাহিযা ইলাল আযকানি ফাহুম মুক মাহুন।",
+            "ওয়া জাআলনা মিম বাইনি আইদীহিম সাদ্দাও ওয়া মিন খালফিহিম সাদ্দান ফাগশায়নাহুম ফাহুম লা ইউবসিরূন।",
+            "ওয়া সাওয়াউন আলাইহিম আ আনযারতাহুম আম লাম তুনযিরহুম লা ইউমিনূন।",
+            "ইন্নামা তুনযিরু মানিত্তাবাআজ যিকরা ওয়া খাশিয়ার রাহমানা বিলগাইবি ফাবাশশিরহু বি মাগফিরাতিও ওয়া আজরিন কারীম।",
+            "ইন্না নাহনু নুহযিল মাওতা ওয়া নাকতুবু মা কদ্দামু ওয়া আসারাহুম ওয়া কুল্লা শাইইন আহসাইনাহু ফি ইমামিম মুবীন।",
+            "ওয়াদরিব লাহুম মাছালান আসহাবাল কারইয়াহ, ইয জাআহাল মুরসালূন।",
+            "ইয আরসালনা ইলাইহিমুছ নাইনি ফাকাযযাবুহুম ফায্যাযযানা বিছালিছিন ফাকালু ইন্না ইলাইকুম মুরসালূন।",
+            "কালু মা আনতুম ইল্লা বাশারুম মিছলুনা ওয়া মা আনযালার রাহমানু মিন শাইইন ইন আনতুম ইল্লা তাকযিবূন।",
+            "কালু রাব্বুনা ইয়ালামু ইন্না ইলাইকুম লামুরসালূন।",
+            "ওয়া মা আলাইনা ইল্লাল বালাগুল মুবীন।",
+            "কালু ইন্না তাতাইয়্যারনা বিকুম লাইল্লাম তানতাহু লানারজুমান্নাকুম ওয়া লাইয়ামাসসান্নাকুম মিন্না আযাবুন আলীম।",
+            "কালু তাইরুকুম মাআকুম আইন যুক্কিরতুম বাল আনতুম কওমুম মুসরিফূন।",
+            "ওয়া জাআ মিন আকসাল মাদীনাতি রাজুলুই ইয়াসআ কালা ইয়া কওমিত তাবিউল মুরসালীন।",
+            "ইত্তাবিউ মাল লা ইয়াসআলুকুম আজরাও ওয়া হুম মুহতাদূন।",
+            "ওয়া মা লিয়া লা আবুদুল্লাযী ফাতারানী ওয়া ইলাইহি তুরজাউন।",
+            "আ আত্তাখিযু মিন দূনিহী আলিহাতান ইই ইউরিদনির রাহমানু বিদুররিল লা তুগনি আন্নী শাফাআতুহুম শাইআও ওয়া লা ইউনকিযূন।",
+            "ইন্নী ইযাল লাফী দালালিম মুবীন।",
+            "ইন্নী আমানতু বিরাব্বিকুম ফাসমাউন।",
+            "কীলাদখুলিল জান্নাহ কালা ইয়া লাইতা কওমী ইয়ালামূন।",
+            "বিমা গাফারা লী রাব্বী ওয়া জাআলানী মিনাল মুকরামীন।",
+            "ওয়া মা আনযালনা আলা কওমিহী মিম বাদীহী মিন জুনদিম মিনাস সামাই ওয়া মা কুন্না মুনযিলীন।",
+            "ইন কানাত ইল্লা সাইহাতাও ওয়াহিদাতান ফাইযা হুম খামিদূন।",
+            "ইয়া হাসরাতান আলাল ইবাদ মা ইয়াতীহিম মি ররাসূলিন ইল্লা কানু বিヒー ইয়াসতাহযিউন।",
+            "আলাম ইয়ারাও কাম আহলাকনা ক্বাবলাহুম মিনাল কুরুনি আন্নাহুম ইলাইহিম লা ইয়ারজিউন।",
+            "ওয়া ইন কুল্লুল লাম্মা জামীউল লাদাইনা মুহদারূন।",
+            "ওয়া আয়াতুল লাহুমুল আরদুল মাইতাতু আহইয়াইনাহা ওয়া আখরাজনা মিনহা হাব্বান ফামিনহু ইয়াকুলূন।",
+            "ওয়া জাআলনা ফীহা জান্নাতিম মিন নাখীলিও ওয়া আনাবি ওয়া ফাজ্জারনা ফীহা মিনাল উয়ূন।",
+            "লিইয়াকুলু মিন ছামারিহী ওয়া মা আমিলাতু আইদীহিম অফালা ইয়াশকুরূন।",
+            "সুবহানাল্লাযী খালাকাল আজওয়াজা কুল্লাহা মিম্মা তুমবিতুল আরদু ওয়া মিন আনফুসিহিম ওয়া মিম্মা লা ইয়ালামূন।",
+            "ওয়া আয়াতুল লাহুমুল লাইলু নাসলাখু মিনহুন নাহার ফাইজাহুম মুযলিমূন।",
+            "ওয়াশ শামসু তাজরী লিমুস্তাকাররিল লাহা যালিকা তাকদীরুল আযীযিল আলীম।",
+            "ওয়াল কামারা কদ্দারনাহু মানাযিলা হাত্তা আদা কাল উরজুনিল কাদীম।",
+            "লাশ শামসু ইয়ামবাগী লাহা আন তুদরিকাল কামারা ওয়া লাল লাইলু সাবিকুন নাহার ওয়া কুল্লুন ফি ফালাকিই ইয়াসবাহূন।",
+            "ওয়া আয়াতুল লাহুম আন্না হামালনা যুররিয়্যাতাহুম ফিল ফুলকিল মাশহূন।",
+            "ওয়া খালাকনা লাহুম মিম মিছলিহী মা ইয়ারকাবূন।",
+            "ওয়া ইন নাশা নুগরিকহুম ফালা সারীখা লাহুম ওয়া লা হুম ইউনকাযূন।",
+            "ইল্লা রাহমাতাম মিন্না ওয়া মাতাআন ইলা হীন।",
+            "ওয়া ইযা কীলা লাহুমুত্তাকু মা বাইনা আইদীকুম ওয়া মা খালফাকুম লাআল্লাহুম তুরহামূন।",
+            "ওয়া মা তাতীহিম মিন আয়াতিম মিন আয়াতি রাব্বিহিম ইল্লা কানু আনহা মুঅরিদ্বীন।",
+            "ওয়া ইযা কীলা লাহুম আনফিকু মিম্মা রাযাকাকুমুল্লাহু কালাল্লাযীনা কাফারু লিল্লাযীনা আমানু আনুতইমু মাল লাও ইয়াশাআল্লাহু আতআমাহু ইন আনতুম ইল্লা ফি দালালিম মুবীন।",
+            "ওয়া ইয়াকূলূনা মাতা হাযাল ওয়াদু ইন কুনতুম সাদিকীন।",
+            "মা ইয়ানযুরূনা ইল্লা সাইহাতাও ওয়াহিদাতান তাকহুযুহুম ওয়া হুম ইয়াকিখখিমূন।",
+            "ফালা ইয়াস্তাতীউনা তাওসিয়াতাউ ওয়া লা ইলা আহলিহিম ইয়ারজিউন।",
+            "ওয়া নুফিখা ফিস সূরি ফাইযা হুম মিনাল আজদাছি ইলা রাব্বিহিম ইয়ানসিলূন।",
+            "কালু ইয়া ওয়াইলানা মাম বাআচ্ছা না মিম মারকাদিনা হাযা মা ওয়া আদার রাহমানু ওয়া সাদাকাল মুরসালূন।",
+            "ইন কানাত ইল্লা সাইহাতাও ওয়াহিদাতান ফাইযা হুম জামীউল লাদাইনা মুহদারূন।",
+            "ফাল ইয়াওমা লা তুযলামু নাফসুন শাইআও ওয়া লা তুজযাওনা ইল্লা মা কুনতুম তামালূন।",
+            "ইন্না আসহাবাল জান্নাতিল ইয়াওমা ফি শুগুলিন ফাকিহূন।",
+            "হুম ওয়া আজওয়াজুহুম ফি যিলালিন আলাল আরাইকি মুত্তাকিউন।",
+            "লাহুম ফীহা ফাকিহাতুও ওয়া লাহুম মা ইয়েদ্দাউন।",
+            "সালামুন কওলাম মি ররাব্বির রাহীম।",
+            "ওয়ামতাজুল ইয়াওমা আইয়ুহাল মুজরিমূন।",
+            "আলাম আহাদ ইলাইকুম ইয়া বানী আদামা আল লা তাবুদুশ শাইতানা ইন্নাহু লাকুম আদুউওুম মুবীন।",
+            "ওয়া আনিবুদূনী হাযা সিরাতুম মুস্তাকীম।",
+            "ওয়া লাকাদ আদাল্লা মিনকুম জিবিল্লান কাছীরান অফালাম তাকূনু তাক্বিলূন।",
+            "হাযিহী জাহান্নামুল্লতী কুনতুম তুআদূন।",
+            "ইসলাওহাল ইয়াওমা বিমা কুনতুম তাকফুরূন।",
+            "আলইয়াওমা নাখতিমু আলা আফওয়াহিহিম ওয়া তুকাল্লিমুনা আইদীহিম ওয়া তাশহাদু আরজুলুহুম বিমা কানু ইয়াকসিবূন।",
+            "ওয়া লাও নাশাউ লা তামাসনা আলা আইইউনিহিম ফাস্তাবাকুস সিরাতা ফায়ান্না ইউবসিরূন।",
+            "ওয়া লাও নাশাউ লা মাসাখনাহুম আলা মাকানাতিহিম ফামাস তাতাউ মুদিয়্যাও ওয়া লা ইয়ারজিউন।",
+            "ওয়া মান নুআম্মিরহু নুনাক্কিসহু ফিল খালক্বি অফালা ইয়াক্বিলূন।",
+            "ওয়া মা আল্লামনাহুশ শিঅরা ওয়া মা ইয়ামবাগী লাহু ইন হুওয়া ইল্লা যিকরউ ওয়া কোরআনুম মুবীন।",
+            "লিইয়ুনযিরা মান কানা হাইয়াও ওয়া ইয়াহি ক্কাল কওলু আলাল কাফিরীন।",
+            "আ ওয়া লাম ইয়ারাও আন্না খালাকনা লাহুম মিম্মা আমিলাত আইদীনা আনআমান ফাহুম লাহা মালিকূন।",
+            "ওয়া যাল্লালনাহা লাহুম ফামিনহা রা কূবুহুম ওয়া মিনহা ইয়াকুলূন।",
+            "ওয়া লাহুম ফীহা মানাফিউ ওয়া মাশারিবু অফালা ইয়াশকুরূন।",
+            "ওয়াত তাখাযু মিন দূনিল্লাহি আলিহাতাল লাআল্লাহুম ইউনসারূন।",
+            "লা ইয়াস্তাতীউনা নাসরাহুম ওয়া হুম লাহুম জুনদুম মুহদারূন।",
+            "ফালা ইয়াহযুনকা কওলুহুম ইন্না নালামু মা ইউসিরルーনা ওয়া মা ইউলিনূন।",
+            "আ ওয়া লাম ইয়ারাল ইনসানু আন্না খালাকনাহু মিন নুথফাতিন ফাইযা হুওয়া খাসীমুম মুবীন।",
+            "ওয়া দারা বা লানা মাছালাও ওয়া নাসিয়া খালক্বাহু কালা মাই ইউহইইল ইযামা ওয়া হিয়া রামীম।",
+            "কুল ইউহইইহাল্লাযী আনশাহা আউওয়ালা মাররাতিও ওয়া হুওয়া বিকুল্লি খালকিন আলীম।",
+            "আল্লাযী জাআলা লাকুম মিনাশ শাজারিল আখদারি নারান ফাইযা আনতুম মিনহু তূকিদূন।",
+            "আ ওয়া লাইসাল্লাযী খালাকাস সামাওয়াতি ওয়াল আরদা বিকাদিরিন আলা আই ইয়াকলুকা মিছলাহুম বালা ওয়া হুওয়াল খাল্লাকুল আলীম।",
+            "ইন্নামা আমরুহূ ইযা আরাদা শাইআন আই ইয়াকূলা লাহু কুন ফায়াকূন।",
+            "ফাসুবহানাল্লাযী বিইয়াদীহী মালাকূতু কুল্লি শাইইও ওয়া ইলাইহি তুরজাউন।"
+        ];
+
+        let currentFontSize = 18; // Default text size in px
+
+        // Render verses to DOM with Blue theme classes
+        function renderVerses() {
+            const container = document.getElementById('verseContainer');
+            container.innerHTML = verses.map((verse, index) => {
+                const verseNum = index + 1;
+                return `
+                    <div id="verse-${verseNum}" class="verse-card group flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-2xl hover:bg-blue-50/70 dark:hover:bg-slate-700/50 border border-transparent hover:border-blue-200 dark:hover:border-slate-600 transition-all duration-200">
+                        
+                        <!-- Verse Number Badge -->
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200 flex items-center justify-center font-bold text-xs sm:text-sm shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            ${verseNum}
+                        </div>
+
+                        <!-- Verse Text -->
+                        <div class="flex-grow pt-0.5 sm:pt-1">
+                            <p class="verse-text leading-relaxed font-medium text-slate-800 dark:text-slate-100" style="font-size: ${currentFontSize}px;">
+                                ${verse}
+                            </p>
+                        </div>
+
+                        <!-- Single Verse Copy Button -->
+                        <button 
+                            onclick="copySingleVerse(${verseNum}, \`${verse.replace(/`/g, "\\`")}\`)"
+                            class="opacity-0 group-hover:opacity-100 focus:opacity-100 p-2 text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-all"
+                            title="আয়াত কপি করুন"
+                        >
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Search/Filter function
+        /*function filterVerses() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const verseCards = document.querySelectorAll('.verse-card');
+
+            verseCards.forEach((card, index) => {
+                const text = verses[index].toLowerCase();
+                const verseNum = (index + 1).toString();
+
+                if (text.includes(query) || verseNum === query || query === '') {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }*/
+
+        // Font size adjuster
+        function changeFontSize(delta) {
+            currentFontSize = Math.min(Math.max(currentFontSize + delta, 14), 28);
+            const textElements = document.querySelectorAll('.verse-text');
+            textElements.forEach(el => el.style.fontSize = `${currentFontSize}px`);
+        }
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+        }
+
+        // Single Verse Copying
+        function copySingleVerse(num, text) {
+            const formatted = `${num}. ${text}`;
+            copyToClipboard(formatted, `আয়াত নম্বর ${num} কপি করা হয়েছে!`);
+        }
+
+        // Copy All Verses
+        function copyAllText() {
+            let fullText = "সূরা ইয়াসীন (সম্পূর্ণ ১-৮৩ আয়াত)\n\n";
+            verses.forEach((verse, index) => {
+                fullText += `${index + 1}. ${verse}\n`;
+            });
+            copyToClipboard(fullText, "সম্পূর্ণ সূরা ইয়াসীন কপি করা হয়েছে!");
+        }
+
+        // Universal Copy Helper
+        function copyToClipboard(text, successMessage) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            showToast(successMessage);
+        }
+
+        // Toast display
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.textContent = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 2500);
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            renderVerses();
+        };
+    </script>
+</body>
+</html>
